@@ -1,11 +1,11 @@
 apiVersion: v2
-name: keycloak
+name: keycloak-operator
 type: application
 version: 1.0.0
+appVersion: "26.1.0"
+sources:
+  - https://github.com/keycloak/keycloak-k8s-resources
 dependencies:
-  - name: keycloak
-    version: "26.1.0"
-    repository: "https://github.com/keycloak/keycloak-k8s-resources"
   - name: postgresql
     version: "16.4.5"
     repository: "https://charts.bitnami.com/bitnami"
