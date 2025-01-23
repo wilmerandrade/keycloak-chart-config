@@ -16,7 +16,6 @@ keycloak:
   hostname:
     hostname: keycloak.local
 
-# PostgreSQL configuration
 postgresql:
   enabled: true
   auth:
@@ -27,4 +26,3 @@ postgresql:
   secretKeys:
     adminPasswordKey: postgres-password
     userPasswordKey: password
-
