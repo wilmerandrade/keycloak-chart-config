@@ -1,0 +1,12 @@
+apiVersion: v2
+name: keycloak
+type: application
+version: 1.0.0
+dependencies:
+  - name: keycloak
+    version: "26.1.0"
+    repository: "https://github.com/keycloak/keycloak-k8s-resources"
+  - name: postgresql
+    version: "16.4.5"
+    repository: "https://charts.bitnami.com/bitnami"
+    condition: postgresql.enabled
