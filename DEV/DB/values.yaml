@@ -4,9 +4,7 @@ postgresql:
     enablePostgresUser: true
     username: "bn_keycloak"
     database: "db_keycloak"
-    postgresPassword: "password"
-    password: "password"
-#    existingSecret: keycloak-db-secret
-#    secretKeys:
-#      adminPasswordKey: postgres-password
-#      userPasswordKey: password
+    existingSecret: keycloak-db-secret
+    secretKeys:
+      adminPasswordKey: postgres-password
+      userPasswordKey: password
