@@ -1,21 +1,3 @@
-keycloak:
-  instances: 1
-  db:
-    vendor: postgres
-    host: postgresql
-    usernameSecret:
-      name: keycloak-db-secret
-      key: username
-    passwordSecret:
-      name: keycloak-db-secret
-      key: password
-    database: db_keycloak
-    port: 5432
-  http:
-    tlsSecret: keycloak-tls-secret
-  hostname:
-    hostname: keycloak.local
-
 postgresql:
   enabled: true
   auth:

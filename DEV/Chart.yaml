@@ -2,9 +2,6 @@ apiVersion: v2
 name: keycloak-operator
 type: application
 version: 1.0.0
-appVersion: "26.1.0"
-sources:
-  - https://github.com/keycloak/keycloak-k8s-resources
 dependencies:
   - name: postgresql
     version: "16.4.5"
