@@ -1,4 +1,5 @@
 postgresql:
+  enabled: true
   auth:
     enablePostgresUser: true
     username: "bn_keycloak"
